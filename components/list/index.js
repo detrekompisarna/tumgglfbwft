@@ -4,14 +4,18 @@ import { List } from './s'
 import ListItem from './list-item'
 // import { SafeAreaView, FlatList, Text } from 'react-native'
 
-const ListNode = ({ users }) => (
-    <List
-        data={users}
-        renderItem={({ item, index }) => (
-            <ListItem user={item} index={users.length - index} max={users.length} />
-        )}
-        inverted={true}
-    />
-)
+const ListNode = ({ users }) => {
+    console.log(users)
+
+    return (
+        <List
+            data={users}
+            renderItem={({ item, index }) => (
+                <ListItem user={item} index={users.length - index} max={users.length} />
+            )}
+            inverted={true}
+        />
+    )
+}
 
 export default ListNode

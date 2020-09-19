@@ -44,9 +44,9 @@ const ListItem = ({ user, index, max }) => (
             <ItemBottom>
                 <Joined>{`joined ${Math.floor(Math.random() * Math.floor(30)) + 1}/${Math.floor(Math.random() * Math.floor(11)) + 1}`}</Joined>
                 <ButtonsWrapper>
-                    <StatsButton>
+                    {/* <StatsButton>
                         <ButtonText>?</ButtonText>
-                    </StatsButton>
+                    </StatsButton> */}
                     <PlusButton onClick={() => updateDatabase('105', true)}>
                         <ButtonText>+</ButtonText>
                     </PlusButton>
